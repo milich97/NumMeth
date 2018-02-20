@@ -8,7 +8,7 @@ import java.util.function.DoubleUnaryOperator;
 public class Galerkin {
     public double[] solve(DoubleUnaryOperator p, DoubleUnaryOperator r, DoubleUnaryOperator q, DoubleUnaryOperator f, DoubleUnaryOperator[] Lphi, DoubleUnaryOperator[] polynomials, int n) throws Exception {
         int a = -1, b = 1;
-        int N = 4;
+        int N = 8;
         System.out.println("Метод Галёркина");
 
         double[][] A = new double[n][n];

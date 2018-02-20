@@ -27,10 +27,11 @@ public class Gauss {
             mas[i] = help;
         }
         double tk[];
-        Solver solver = new Solver(mas[N], N);
-        solver.tab();
+        Solver solver = new Solver(mas, N);
         solver.solve();
         tk = solver.getMas();
+
+
 
         double ck[] = new double[N];
         for (int i = 0; i < ck.length; i++) {
